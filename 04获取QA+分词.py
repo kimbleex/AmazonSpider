@@ -5,7 +5,7 @@ from CutWord import cut_word
 from tqdm import tqdm
 
 # 主题
-theme = 'macbook case glitter'
+theme = 'Your Theme'
 
 # 储存路径
 savepath = './data/{}/'.format(theme)

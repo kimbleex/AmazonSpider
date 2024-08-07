@@ -76,5 +76,5 @@ def get_age(theme):
 
 
 # 该步骤之前需要准备好XXX-name.csv文件,使用chatgpt标注性别
-get_age(theme='macbook case glitter')
+get_age(theme='Your Theme')
 

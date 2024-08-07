@@ -3,7 +3,7 @@ import pandas as pd
 from AmzonSpider import AmazonSpider
 
 # 主题
-theme = 'macbook case glitter'
+theme = 'Your Theme'
 # 一共抓取多少页
 page = 20
 

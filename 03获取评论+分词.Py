@@ -5,7 +5,7 @@ from AmzonSpider import AmazonSpider
 from CutWord import cut_word
 
 # 主题
-theme = 'macbook case glitter'
+theme = 'Your Theme'
 
 # 数据存储路径
 savepath1 = './data/{}/'.format(theme)
