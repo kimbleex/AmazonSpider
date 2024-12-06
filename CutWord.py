@@ -6,7 +6,7 @@ from nltk.tokenize import word_tokenize
 
 def cut_word(theme, fun, columns, column):
 
-    filename = './data/{}/{}-{}.csv'.format(theme, theme, fun)
+    filename = './sample/{}-{}.csv'.format(theme, fun)
     data = pd.read_csv(filename,names=columns)
     data.drop_duplicates(keep='first', inplace=True)
     data[column] = data[column].astype(str)
@@ -28,7 +28,7 @@ def cut_word(theme, fun, columns, column):
     df = df.to_frame().reset_index()
     
     savepath = './result/{}/'.format(theme)
-    filename = './result/{}/{}分词结果.csv'.format(theme, column)
+    filename = './result/{}/{}-cutwords.csv'.format(theme, column)
     if not os.path.exists(savepath):
         os.makedirs(savepath)
     df.to_csv(filename, index=False, header=['word', 'times'], encoding='utf-8-sig')
